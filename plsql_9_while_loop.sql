@@ -1,3 +1,6 @@
+clear scr;
+set serveroutput on;
+
 declare
 	n			number			default 0;
 	label_vert	varchar2(240)	default '&label';
