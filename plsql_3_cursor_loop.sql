@@ -19,10 +19,11 @@ begin
 
 	loop
 		fetch c1 into r1;
-		if c1%found then
-			dbms_output.put_line('nome: ' || r1.id_venda || ' ' || 'qtde. venda: ' || r1.qtd_venda);
-		else
+--		if c1%found then
+		if c1%notfound then
 			exit;
+		else
+			dbms_output.put_line('nome: ' || r1.id_venda || ' ' || 'qtde. venda: ' || r1.qtd_venda);
 		end if;
 	end loop;
 
