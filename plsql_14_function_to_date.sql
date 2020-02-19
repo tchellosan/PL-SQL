@@ -6,6 +6,11 @@ declare
 	wvalor number;
 begin
 
+	--wdata := to_date('21-FEV-09', 'DD-MON-YY');
+	--wdata := to_date('05/21/81', 'MM/DD/YY');
+	wdata := to_date('21/05/81', 'DD/MM/YY');
+	dbms_output.put_line(wdata);
+
 	dbms_output.put_line(to_date('010682', 'ddmmrr'));
 	dbms_output.put_line(to_date('21.05.2009', 'dd.mm.yyyy'));
 	dbms_output.put_line(to_date('April 21', 'month dd', 'nls_date_language=american'));
